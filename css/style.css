@@ -109,6 +109,7 @@ body{
 
 /*mobile side*/
 .more-option-container{
+
     display: none;
     position: absolute;
     width: 150px;
