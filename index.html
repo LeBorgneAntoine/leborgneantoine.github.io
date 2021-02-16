@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="toDoApp">
+<html lang="en" ng-app="to_do_app">
     <head>
         <meta charset="UTF-8">
         <title>TO DO APP | home</title>
@@ -8,14 +8,13 @@
         <script type="text/javascript" src="node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="js/controllers/controller.js" ></script>
-
+        <!-- font link -->
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <!-- css link -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/global_variables.css" rel="stylesheet">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 
     </head>
     <body>
@@ -24,14 +23,16 @@
         <div class="background-home">
 
             <nav class="navigation-container-desktop">
-                <a href="#" class="navigation-link">home</a>
-                <a href="#" class="navigation-link">list task</a>
+                <a href="#" class="navigation-link">Home</a>
                 <div class="navigation-container-desktop-search-bar">
 
                     <input class="search-bar-input" placeholder="Search..."/>
                     <img class="search-bar-validate" src="https://img.icons8.com/material-sharp/27/c9ccd3/search.png"/>
 
                 </div>
+                <a href="#" class="navigation-link">List task</a>
+                <a href="#" class="navigation-link">Add task</a>
+                <a href="#" class="navigation-link">Edit category</a>
 
 
             </nav>
@@ -40,9 +41,9 @@
             <!-- only for mobile -->
 
             <ul id="more-option" class="more-option-container">
-                <li class="more-option-li"> <a><img class="more-option-icon" src="https://img.icons8.com/android/24/c9ccd3/plus.png"/> Add task</a></li>
-                <li class="more-option-li"> <a><img class="more-option-icon" src="https://img.icons8.com/windows/24/c9ccd3/about-us-female.png"/> Contact</a></li>
-                <li class="more-option-li"> <a><img class="more-option-icon" src="https://img.icons8.com/ios/24/c9ccd3/settings--v1.png"/> Settings</a></li>
+                <li class="more-option-li"> <a onclick="console.log('add')" ><img class="more-option-icon" src="https://img.icons8.com/android/24/c9ccd3/plus.png"/> Add task</a></li>
+                <li class="more-option-li"> <a onclick="" ><img class="more-option-icon" src="https://img.icons8.com/windows/24/c9ccd3/about-us-female.png"/> Contact</a></li>
+                <li class="more-option-li"> <a onclick="" ><img class="more-option-icon" src="https://img.icons8.com/ios/24/c9ccd3/settings--v1.png"/> Settings</a></li>
             </ul>
 
 
