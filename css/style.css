@@ -21,7 +21,7 @@ body{
     }
 
     .more-option-container{
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -109,7 +109,7 @@ body{
 
 /*mobile side*/
 .more-option-container{
-    visibility: hidden;
+    display: none;
     position: absolute;
     width: 150px;
     height: 200px;
