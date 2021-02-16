@@ -1,5 +1,11 @@
 function displayMore(){
+
     let option = document.getElementById("more-option")
 
-    option.style.display = (option.style.display === "block")?"none":"block"
+    if(option.style.display === "block"){
+        option.style.display = "none"
+    }else{
+        option.style.display = "block"
+    }
+
 }
