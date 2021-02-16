@@ -21,7 +21,7 @@ body{
     }
 
     .more-option-container{
-        display: none;
+        visibility: hidden;
     }
 }
 
