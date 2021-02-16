@@ -120,9 +120,7 @@ body{
     right: 10px;
     padding-left: 20px;
     bottom: calc(var(--mobile-navigation-height) + 10px);
-    animation: both;
-    animation-name: slideIn;
-    animation-duration: 500ms;
+
 }
 
 
