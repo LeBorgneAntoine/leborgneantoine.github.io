@@ -4,15 +4,18 @@
   "description": "",
   "main": "js/app.js",
   "dependencies": {
-    "angular": "^1.8.2",
     "angular-route": "^1.8.2",
     "cordova": "^10.0.0",
+    "domino": "^2.1.6",
     "express": "^4.17.1",
     "materialize-css": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular": "^1.8.2"
+  },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
