@@ -1,8 +1,2 @@
-angular.module('searchResult',["ngRoute"])
-    .config(($routeProvider) => {
-    $routeProvider
-        .when("/",{
-            templateUrl : "index.html"
-        })
-        .otherwise("/")
-})
+const searchResultModule =  angular.module("searchResult", ['ngRoute'])
+const listTaskModule =  angular.module("listTask", ['ngRoute'])

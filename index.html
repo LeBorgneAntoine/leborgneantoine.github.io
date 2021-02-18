@@ -8,7 +8,11 @@
         <script type="text/javascript" src="node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/dataObject/Task.js"></script>
         <script type="text/javascript" src="js/controllers/controller.js" ></script>
+        <script type="text/javascript" src="js/controllers/controllerSearch.js" ></script>
+        <script type="text/javascript" src="js/dataBase/database.js" ></script>
+
 
         <!-- font link -->
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -22,13 +26,22 @@
     <body>
 
         <div class="background-home">
+            <!-- navigation bar -->
+            <div ng-app="searchResult" ng-controller="searchResultController">
 
             <nav class="navigation-container-desktop">
                 <a href="/" class="navigation-link">Home</a>
                 <div class="navigation-container-desktop-search-bar">
 
-                    <input class="search-bar-input" placeholder="Search..."/>
-                    <img class="search-bar-validate" src="https://img.icons8.com/material-sharp/27/c9ccd3/search.png"/>
+                    <input onfocusout="lostFocusInput()" onfocusin="gainFocusInput()" ng-model="filter" id="search-input"  class="search-bar-input" placeholder="Search..."/>
+
+                    <ul id="search-result" class="search-result-desktop">
+                        <li class="search-result-desktop-element" ng-repeat="task in tasks | filter:filter | limitTo:4">
+
+                            <h2 class="search-result-desktop-task-title">{{task._title}}</h2>
+
+                        </li>
+                    </ul>
 
                 </div>
                 <a href="#" class="navigation-link">List task</a>
@@ -37,12 +50,9 @@
 
             </nav>
 
-            <ul class="search-result-desktop">
-              <li>
-                  
-              </li>
-            </ul>
 
+
+            </div>
 
             <!-- only for mobile -->
 
@@ -64,7 +74,7 @@
         </div>
 
 
-        <div  ng-app="to_do_app"></div>
+
 
     </body>
 </html>

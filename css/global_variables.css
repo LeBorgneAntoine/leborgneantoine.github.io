@@ -1,7 +1,10 @@
 :root{
+
     /*----------- color variables -------------*/
-    --bacground-color: #323840;
+    --background-color: #323840;
     --upper-background-color: #3b424c;
+    --upper-background-color-vibrant: #373d47;
+    --upper-background-color-hover: #2b3237;
     --primary-color: #627fad;
     --text-color: #c9ccd3;
     --drop-shadow-color: #252830;
