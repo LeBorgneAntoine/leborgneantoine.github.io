@@ -1,4 +1,4 @@
-angular.module("to_do_app",["ngRoute"])
+angular.module('searchResult',["ngRoute"])
     .config(($routeProvider) => {
     $routeProvider
         .when("/",{
