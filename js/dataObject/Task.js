@@ -6,7 +6,6 @@
  */
 class Task{
 
-
     /**
      * default constructor of a task
      *
@@ -115,11 +114,23 @@ class Task{
     ////////////////////////////////////////////////////////////////////////////////////
 
 
+    /**
+     * set the title of the task
+     * reminder: title can't be null or empty
+     *
+     * @param value the new value of the title to assign
+     */
     set title(value) {
         this.checkTitleRequireParameter(value)
         this._title = value;
     }
 
+    /**
+     * set the description of the task
+     * reminder: description can't be null or empty
+     *
+     * @param value the new value of the description to assign
+     */
     set description(value) {
         this.checkDescriptionRequireParameter(value)
         this._description = value;

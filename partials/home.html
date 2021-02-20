@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>HOME</h1>
-</body>
-</html>
+<ul class="home-list-task-container" >
+    <li class="home-list-task-element" ng-repeat="task in display_taks">
+        <h2 class="home-list-task-element-text" >{{task._title}}</h2>
+    </li>
+</ul>
+

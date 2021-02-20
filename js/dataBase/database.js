@@ -1,9 +1,11 @@
 getData = () =>{
-    return [
-        new Task("task run 1", "lil desc"),
-        new Task("task book 2", "lil desc"),
-        new Task("task run 6", "lil desc"),
-        new Task("fitness", "lil desc"),
-        new Task("bread", "lil desc"),
-    ]
+
+    let numberOfData = 30
+
+    let retArray = []
+
+    for(let i = 0 ; i< numberOfData ;i++){
+        retArray.push(new Task("task "+(i+1), "description"))
+    }
+    return retArray
 }

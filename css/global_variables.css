@@ -1,16 +1,68 @@
-:root{
+/*///////////////////////| DARK THEME |///////////////////////////*/
+@media (prefers-color-scheme: dark) {
 
-    /*----------- color variables -------------*/
-    --background-color: #323840;
-    --upper-background-color: #3b424c;
-    --upper-background-color-vibrant: #373d47;
-    --upper-background-color-hover: #2b3237;
-    --primary-color: #627fad;
-    --text-color: #c9ccd3;
-    --drop-shadow-color: #252830;
+    :root{
 
-    /*----------- dimension variables -------------*/
-    --mobile-navigation-height: 70px;
+
+        /*----------- color variables -------------*/
+
+        --background-color: #323840;
+        --upper-background-color: #3b424c;
+        --upper-background-color-vibrant: #373d47;
+        --upper-background-color-hover: #2b3237;
+        --primary-color: #627fad;
+        --text-color: #c9ccd3;
+        --search-bar-text-color:#c9ccd3 ;
+        --text-color-hover: #ffffff;
+        --drop-shadow-color: #252830;
+        --drop-shadow-color-light: #17181d;
+        --search-bar-background-color: #323840;
+
+
+    }
 
 }
 
+
+/*///////////////////////| LIGHT THEME |///////////////////////////*/
+@media (prefers-color-scheme: light) {
+
+    :root {
+
+
+        /*----------- color variables -------------*/
+
+        --background-color: #ffffff;
+        --upper-background-color: #ffffff;
+        --upper-background-color-vibrant: #f1f1f1;
+        --search-bar-background-color: #3b414c;
+        --search-bar-text-color:#c9ccd3 ;
+        --upper-background-color-hover: #9b9b9b;
+        --primary-color: #627fad;
+        --text-color: #5f5f5f;
+        --text-color-hover: #000000;
+        --drop-shadow-color: #cacaca;
+        --drop-shadow-color-light: #474747;
+
+
+    }
+
+}
+
+
+
+
+:root {
+
+    /*----------- dimension variables -------------*/
+    --navigation-bar-height: 60px;
+
+    /*---------- fonts sizes variables ------------*/
+    --navigation-bar-font-size: 20px;
+    --task-list-font-size: 20px;
+
+    /*---------- fonts family variables -----------*/
+    --navigation-font-family: "Roboto", sans-serif;
+    --task-list-font-family: "Roboto thin", sans-serif;
+
+}

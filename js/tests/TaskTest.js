@@ -45,8 +45,6 @@ testConstructor = (id) => {
     }
 
 
-
-
     try {
         task = new Task(
             "title",
