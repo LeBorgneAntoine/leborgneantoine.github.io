@@ -1,7 +1,7 @@
 {
   "name": "leborgneantoine.github.io",
   "version": "0.1.0",
-  "homepage": "https://leborgneantoine.github.io",
+  "homepage": "https://leborgneantoine.github.io/build",
   "private": false,
   "dependencies": {
     "react": "^18.2.0",
